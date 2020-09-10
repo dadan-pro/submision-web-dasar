@@ -5,6 +5,9 @@
     margin:0;  
     box-sizing: border-box;
 }
+body{
+    background-color: #d5ded7;
+}
 a{
     color:inherit;
     text-decoration: none;
@@ -37,9 +40,7 @@ a{
 }
 nav{     
     padding:10px 0;
-    background-color:#a3d2ca;
-    position: sticky;
-    top:0;
+    background-color:#a3d2ca;    
     width:100%;
     box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
@@ -69,19 +70,34 @@ nav ul li a:hover{
     Background-color:#5eaaa8;
     color: #fff;
 }
+ .swiper-container {
+    width: 100%;
+    height: 350px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:20px;
+}
+
+.swiper-button-prev{
+    color: #5eaaa8 !important;
+}
+.swiper-button-next{
+    color: #5eaaa8 !important;
+}
+.swiper-slide img{
+    width:100%;
+    height:350px;
+}
+#content{
+    float:left;
+    width:75%;
+}
+aside{
+    float:right;
+    width:25%;
+}
 .card{
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius:5px;
     padding:20px;
-    margin-top: 20px;
- }
- .jumbotron{
-    width:100%;
-    height:300px;
- }
- .jumbotron img{
-     width: 100%;
-     height:300px;
- }
-
-
+    margin-top: 20px;    
+}

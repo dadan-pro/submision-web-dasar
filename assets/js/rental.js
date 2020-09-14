@@ -3,11 +3,8 @@ var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
     autoplay: {
-        delay: 5000,
-      },
-      fadeEffect: {
-        crossFade: true
-      },
+        delay: 6000,
+      },     
  // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',

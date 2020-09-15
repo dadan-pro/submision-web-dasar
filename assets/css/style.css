@@ -5,9 +5,7 @@
     margin:0;  
     box-sizing: border-box;
 }
-body{
-    background-color: #f9f8eb;
-}
+
 header{
     display:inline;
 }
@@ -111,9 +109,9 @@ article{
 Article h3 {
 	padding-bottom: 20px;
 	text-align: center;
-	margin:30px;
+	margin:20px;
     position: relative;
-    font-size: 40px;
+    font-size: 30px;
     color:#155e63;
 }
 Article h3::before {
@@ -136,32 +134,52 @@ Article h3::after {
 	background-color: #155e63;
 	left: calc(50% - 20px);
 }
-  p {
+
+ #profile p {
+     
 	text-align: justify;
 	text-indent: 30px;
 	line-height: 25px;
-    margin-bottom: 5px;
-    padding-right:20px;
+    padding:10px;
        
 }
-Article  img {
+#profile  img {
+    float:left;
+    margin: 0 auto;
 	text-align: center;
-    float: left;
-    width:390px;
-    height:290px;
+    padding-left:10px;
     padding-right:30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: 100%;
 }
 .container {
-    padding: 30px;
+    padding: 20px;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius:5px;    
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: hsl(160, 20%, 88%);
 }
 .container::after {
 	content: '';
 	display: block;
 	clear: both;
+}
+.column .box{
+    float:left;
+    text-align:center;
+    width:25%;
+    padding:10px;
+    
+}
+.column .box p{
+    margin-top:10px;
+    font-size: 13px;
+}
+.column .box img{
+    width:50px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px){
@@ -177,4 +195,17 @@ Article  img {
         padding:20px;
         
     }
+}
+
+.col-3 {
+	width:33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding:50px 10px;
+}
+.col-3 h4 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
 }

@@ -104,7 +104,7 @@ nav ul li a:hover{
     height:350px;
 }
 article{
-    width:75%;
+    width:100%;
 }
 Article h3 {
 	padding-bottom: 20px;
@@ -157,8 +157,7 @@ Article h3::after {
     padding: 20px;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius:5px;    
-    margin-top: 15px;
-    margin-left: 15px;
+    margin:15px;
     background-color: hsl(160, 20%, 88%);
 }
 .container::after {
@@ -181,7 +180,55 @@ Article h3::after {
     width:50px;
     margin-bottom: 10px;
 }
-
+.column .box::after {
+	content: '';
+	display: block;
+    clear: both;
+}
+ .baris {    
+     margin-top:30px;
+     margin-bottom: 10px;
+	width:33.33%;
+	box-sizing: border-box;
+	padding:5px;    
+    text-align: center;
+    float:left;
+	
+}
+.baris:hover{
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.baris img{
+    width: 250px;
+    height:200px;   
+    clip-path: circle();
+ }
+ .baris img:hover{
+    transform: scale(1.5);
+    clip-path: none;  
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+ }
+ .baris h4{
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ .baris ul{
+     padding :10px;
+     margin:0 auto;
+     color:black;
+     background-color: lightgrey;
+     border-left: 10px solid #155e63;
+     border-radius: 10px;
+ }
+.baris ul li {    
+    list-style-type: none;
+    text-align:center;
+}
+.baris::after{
+    content: '';
+	display: block;
+    clear: left;
+}
 @media (max-width: 768px){
 	.mobile-menu {
 		display: block;
@@ -193,8 +240,27 @@ Article h3::after {
         width: 100%;
         height: 350px;
         padding:20px;
-        
     }
+    .column .box{       
+        width:100%;     
+     }
+     .baris{
+         width :100%;
+     }
+     article{
+         width:100%;
+         margin-right:30px;
+         font-size: small;
+     }
+     #profile  img {
+        width:250px;
+        height:180px;
+        justify-content: center;
+        align-items: center;
+        margin-left:40px;
+        
+       
+     }
 }
 
 .col-3 {

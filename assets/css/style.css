@@ -206,6 +206,7 @@ Article h3::after {
  .baris img:hover{
     transform: scale(1.5);
     clip-path: none;  
+    transition-delay: 0.1s;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2); 
  }
  .baris h4{

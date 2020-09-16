@@ -47,6 +47,7 @@ nav ul li a:hover{
     font-weight: bold;
     Background-color:#155e63;
     color: #fff;
+    transition: 0.3s ease;
 }
  .mobile-menu {
     padding:5px;
@@ -77,7 +78,7 @@ nav ul li a:hover{
 }
 .sidebar ul li {
 	padding:24px;
-	transition: .3s;
+	transition: .3s ease;
 	transition-property: background-color;
 }
 .sidebar ul li:hover {
@@ -196,6 +197,7 @@ Article h3::after {
 	
 }
 .baris:hover{
+    transition: 0.3s ease;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .baris img{
@@ -206,7 +208,7 @@ Article h3::after {
  .baris img:hover{
     transform: scale(1.5);
     clip-path: none;  
-    transition-delay: 0.1s;
+    transition: 0.3s ease;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2); 
  }
  .baris h4{

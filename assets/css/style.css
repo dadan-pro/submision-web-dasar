@@ -278,3 +278,12 @@ Article h3::after {
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 15px;
 }
+
+footer{
+    padding: 15px;
+    color: white;
+    background-color: #155e63;
+    text-align: center;
+    font-weight: bold;
+    
+}

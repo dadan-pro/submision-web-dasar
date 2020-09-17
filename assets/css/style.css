@@ -105,7 +105,9 @@ nav ul li a:hover{
     height:350px;
 }
 article{
+    
     width:100%;
+    
 }
 Article h3 {
 	padding-bottom: 20px;
@@ -260,26 +262,207 @@ Article h3::after {
         height:180px;
         justify-content: center;
         align-items: center;
-        margin-left:40px;
-        
+        margin-left:40px;  
        
      }
+   
 }
-
-.col-3 {
+ #contact{
+     width:75%;
+     float:left;
+ }
+ #contact .kotak{
+      
 	width:33.33%;
 	box-sizing: border-box;
-	float: left;
-	text-align: center;
-	padding:50px 10px;
+	padding:10px;    
+    text-align: center;
+    float:left;	
 }
-.col-3 h4 {
-	padding-bottom: 10px;
-	border-bottom: 1px solid #ddd;
-	margin-bottom: 15px;
+  #contact .kotak::after{ 
+    content: '';
+	display: block;
+    clear: left;
+} 
+#contact .kotak h4{
+    padding-bottom: 10px;
+	text-align: center;
+	margin:20px;
+    position: relative;
+    font-size: 20px;
+    color:#155e63;  
+}
+#contact .kotak p{
+    margin-bottom: 10px;
+    font-size: medium;
+    color:black;
+}
+#contact .kotak .box{
+    width:60%;
+   margin:0 auto;
+   margin-top:20px;
+      margin-bottom: 20px;
+      padding-bottom: 84.5px; 
+       
+     
+}
+#contact .kotak .box:hover{
+    background-color: #76b39d;
+    border-radius: 10px;
+    transform: scale(1.5);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+#contact .box a{
+    text-decoration: none;
+    color:black;
+    
+}
+#contact .box a:hover{
+    color:whitesmoke;
+}
+#contact .kotak h4::after{
+    content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:50px;
+	height:2px;
+	background-color: #155e63;
+	left: calc(50% - 25px);
+}
+#contact .kotak img{
+    width:160px;
+    height:160px;
+    margin:0 auto;
+    padding:10px;
+}
+#contact.kotak iframe{
+    width:100%;
 }
 
-footer{
+
+aside{
+    float:left;
+    width:25%;
+    text-align: center;
+    
+}
+aside img{
+    width :180px;
+    height:180px;
+    border: 6px solid rgb(207, 206, 206,0.7);
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+aside h3{
+    font-weight: bold;
+    padding-bottom: 10px;
+	text-align: center;
+	margin:20px;
+    position: relative;
+    font-size: 20px;
+    color:#155e63;  
+    
+}
+aside h3::after{
+    content:'';
+	display: block;
+	position: absolute;
+    bottom: -1px;
+    
+	width:50px;
+	height:2px;
+	background-color: #155e63;
+	left: calc(50% - 25px);
+}
+.contact aside::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+aside table{
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:justify;
+    font-size:13px;
+    font-weight: bold;
+    background: honeydew;
+    width:100%;
+    border-radius:10px;
+    border-left:5px solid #155e63;
+}
+aside table th{
+    width: 25%;
+}
+aside .table, th, td {
+    padding: 2px 2px;
+    
+}
+aside table tr:hover{
+    background-color:#76b39d;
+}
+aside table tr:nth-child(even){
+    background-color: #fff;
+}
+aside h4{
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top:15px;
+	
+    position: relative;
+    font-size: 19px;
+    color:#155e63; 
+}
+aside ul{
+    list-style-type: none;
+    text-align:center;
+    
+}
+aside ul li {
+    display: inline-block;
+    
+    padding:15px;
+    
+}
+aside a{
+    color: gray;
+   
+}
+ i{
+    font-size: 19px;
+}
+aside  .facebook:hover{
+    color:#3b5998;
+    transform: scale(2);
+    transition: 0.3s ease-in-out;
+    
+}
+aside  .instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+    transform: scale(2);
+    transition: 0.3s ease-in-out;
+}
+aside  .linkedin:hover{
+    color:#007bb5;
+    transform: scale(2);
+    transition: 0.3s ease-in-out;
+    
+}
+aside  .github:hover{
+    color:#000000;
+    transform: scale(2);
+    transition: 0.3s ease-in-out;
+    
+}
+
+footer {
+   
     padding: 15px;
     color: white;
     background-color: #155e63;
@@ -287,3 +470,8 @@ footer{
     font-weight: bold;
     
 }
+main{
+    
+    overflow:auto;
+ 
+ }

@@ -234,57 +234,22 @@ Article h3::after {
 	display: block;
     clear: left;
 }
-@media (max-width: 768px){
-	.mobile-menu {
-		display: block;
-	}
-	nav ul {
-		display: none;
-    }	
-    .swiper-container {
-        width: 100%;
-        height: 350px;
-        padding:20px;
-    }
-    .column .box{       
-        width:100%;     
-     }
-     .baris{
-         width :100%;
-     }
-     article{
-         width:100%;
-         margin-right:30px;
-         font-size: small;
-     }
-     #profile  img {
-        width:250px;
-        height:180px;
-        justify-content: center;
-        align-items: center;
-        margin-left:40px;  
-       
-     }
-   
-}
+
  #contact{
-     width:75%;
-     float:left;
+     width:75%;   
+     float:left;    
+     margin-top:-10px;      
  }
- #contact .kotak{
+  .kotak{
       
 	width:33.33%;
-	box-sizing: border-box;
 	padding:10px;    
     text-align: center;
     float:left;	
+    margin-bottom:54.5px;
 }
-  #contact .kotak::after{ 
-    content: '';
-	display: block;
-    clear: left;
-} 
-#contact .kotak h4{
+
+ .kotak h4{
     padding-bottom: 10px;
 	text-align: center;
 	margin:20px;
@@ -292,36 +257,38 @@ Article h3::after {
     font-size: 20px;
     color:#155e63;  
 }
-#contact .kotak p{
+.kotak p{
     margin-bottom: 10px;
     font-size: medium;
     color:black;
 }
-#contact .kotak .box{
+ .kotak .box{
     width:60%;
-   margin:0 auto;
-   margin-top:20px;
-      margin-bottom: 20px;
-      padding-bottom: 84.5px; 
+    margin:0 auto;
+    
+      margin-bottom: 10px;
+      padding-bottom: 10px; 
        
      
 }
-#contact .kotak .box:hover{
+ .kotak .box:hover{
     background-color: #76b39d;
     border-radius: 10px;
     transform: scale(1.5);
     font-weight: bold;
     transition: 0.3s ease-in-out;
+    text-align: center;
+    padding :5px;
 }
-#contact .box a{
+ .box a{
     text-decoration: none;
     color:black;
     
 }
-#contact .box a:hover{
+ .box a:hover{
     color:whitesmoke;
 }
-#contact .kotak h4::after{
+ .kotak h4::after{
     content:'';
 	display: block;
 	position: absolute;
@@ -331,22 +298,25 @@ Article h3::after {
 	background-color: #155e63;
 	left: calc(50% - 25px);
 }
-#contact .kotak img{
-    width:160px;
-    height:160px;
+ .kotak img{
+    width: 30%;
     margin:0 auto;
     padding:10px;
 }
-#contact.kotak iframe{
+.kotak iframe{
     width:100%;
 }
-
+ .kotak::after{ 
+    content: '';
+	display: block;
+    clear: left;
+} 
 
 aside{
-    float:left;
+    margin-top:-10px;
+    float:right;
     width:25%;
     text-align: center;
-    
 }
 aside img{
     width :180px;
@@ -377,11 +347,7 @@ aside h3::after{
 	background-color: #155e63;
 	left: calc(50% - 25px);
 }
-.contact aside::after{
-    content:" ";
-    display: block;
-    clear: both;
-}
+
 aside table{
     margin-top:10px;
     margin-bottom:10px;
@@ -409,8 +375,7 @@ aside table tr:nth-child(even){
 aside h4{
     padding-bottom: 10px;
     text-align: center;
-    margin-top:15px;
-	
+    margin-top:15px;	
     position: relative;
     font-size: 19px;
     color:#155e63; 
@@ -460,6 +425,11 @@ aside  .github:hover{
     transition: 0.3s ease-in-out;
     
 }
+.contact aside::after{
+    content:'';
+    display: block;
+    clear: left;
+}
 
 footer {
    
@@ -475,3 +445,59 @@ main{
     overflow:auto;
  
  }
+
+ @media  screen and (max-width: 768px){
+	.mobile-menu {
+		display: block;
+	}
+	nav ul {
+		display: none;
+    }	
+    .swiper-container {
+        width: 100%;
+        height: 350px;
+        padding:20px;
+    }
+    .column .box{       
+        width:100%;     
+     }
+     .baris{
+         width :100%;
+     }
+     article{
+         width:100%;
+         
+     }
+     #profile  img {
+        width:300px;
+        height:180px;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;        
+     }
+     
+    #contact {
+        width:100%;
+    }
+    .kotak{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+   aside{
+       width:100%;
+   }
+   aside table{
+       width:80%;
+       justify-content: center;
+       align-items: center;
+       margin:0 auto;
+   }
+
+   footer{
+       font-size: small;
+   }
+}
+
+
+
